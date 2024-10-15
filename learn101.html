@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Learning Resources for Tech Programs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: #232222;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(0.25turn, #d4f0fd, #fdfdfc, #e7f9de);
+      }
+      h1 {
+        text-align: center;
+        color: #202122;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700; 
+      }
+      h2 {
+        color: #2c2e2d;
+        border-bottom: 2px solid #0392f2;
+        padding-bottom: 10px;
+        font-size: 1.8em;
+      }
+      nav {
+        background-color: #34495e;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: #2c3e50;
+      }
+      .program {
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .program:hover {
+        transform: translateY(-5px);
+      }
+      .resources ul {
+        list-style-type: none;
+        padding-left: 20px;
+      }
+      .resources ul li {
+        margin-bottom: 10px;
+      }
+      .resources ul li::before {
+        content: "•";
+        color: #3498db;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .resources ul li a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .resources ul li a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+      }
+      #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        transition: background-color 0.3s;
+      }
+      #back-to-top:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Free Learning Resources for Tech Programs</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#gsoc">GSoC</a></li>
+        <li><a href="#mlh">MLH Fellowship</a></li>
+        <li><a href="#hacktoberfest">Hacktoberfest</a></li>
+        <li><a href="#gsod">GSoD</a></li>
+        <li><a href="#lfx">LFX Mentorship</a></li>
+        <li><a href="#outreachy">Outreachy</a></li>
+        <li><a href="#ms-rl">MS RL Fest</a></li>
+        <li><a href="#kde">Season of KDE</a></li>
+      </ul>
+    </nav>
+
+    <div class="program" id="gsoc">
+      <h2>Google Summer of Code (GSoC)</h2>
+      <p>
+        GSoC is a global program that offers student developers stipends to
+        write code for open source projects.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://summerofcode.withgoogle.com/how-it-works"
+              >Official GSoC Website</a
+            >
+          </li>
+          <li>
+            <a href="https://google.github.io/gsocguides/student/"
+              >GSoC Student Guide</a
+            >
+          </li>
+          <li><a href="https://opensource.guide/">Open Source Guide</a></li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/news/google-summer-of-code-guide/"
+              >FreeCodeCamp GSoC Guide</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="mlh">
+      <h2>MLH Fellowship</h2>
+      <p>
+        The MLH Fellowship is a 12-week internship alternative for aspiring
+        technologists.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://fellowship.mlh.io/"
+              >Official MLH Fellowship Website</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/MLH-Fellowship"
+              >MLH Fellowship GitHub</a
+            >
+          </li>
+          <li><a href="https://mlh.io/prep">MLH Prep Program</a></li>
+          <li>
+            <a href="https://hackp.ac/handbook"
+              >MLH Hackathon Organizer Guide</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="hacktoberfest">
+      <h2>Hacktoberfest</h2>
+      <p>
+        Hacktoberfest is a month-long celebration of open source software run by
+        DigitalOcean.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://hacktoberfest.digitalocean.com/"
+              >Official Hacktoberfest Website</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/topics/hacktoberfest"
+              >Hacktoberfest GitHub Topics</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"
+              >DigitalOcean Open Source Introduction</a
+            >
+          </li>
+          <li>
+            <a href="https://opensource.guide/how-to-contribute/"
+              >How to Contribute to Open Source</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="gsod">
+      <h2>Google Season of Docs (GSoD)</h2>
+      <p>
+        GSoD brings together open source projects and technical writers for a
+        few months of collaborative work.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://developers.google.com/season-of-docs"
+              >Official GSoD Website</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developers.google.com/season-of-docs/docs/tech-writer-guide"
+              >GSoD Technical Writer Guide</a
+            >
+          </li>
+          <li>
+            <a href="https://www.writethedocs.org/">Write the Docs Community</a>
+          </li>
+          <li>
+            <a href="https://www.udacity.com/course/technical-writing--ud999"
+              >Udacity Technical Writing Course</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="lfx">
+      <h2>Linux Foundation Mentorship (LFX Mentorship)</h2>
+      <p>
+        LFX Mentorship is a program that connects mentors and mentees with open
+        source projects.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://lfx.linuxfoundation.org/tools/mentorship"
+              >Official LFX Mentorship Website</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://training.linuxfoundation.org/training/course-catalog/"
+              >Linux Foundation Training Courses</a
+            >
+          </li>
+          <li>
+            <a href="https://www.edx.org/school/linuxfoundationx"
+              >Linux Foundation Courses on edX</a
+            >
+          </li>
+          <li>
+            <a href="https://www.kernel.org/doc/html/latest/"
+              >Linux Kernel Documentation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="outreachy">
+      <h2>Outreachy</h2>
+      <p>
+        Outreachy provides internships in open source and open science to people
+        subject to systemic bias and impacted by underrepresentation in the
+        technical industry.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://www.outreachy.org/">Official Outreachy Website</a>
+          </li>
+          <li>
+            <a href="https://www.outreachy.org/docs/applicant/"
+              >Outreachy Applicant Guide</a
+            >
+          </li>
+          <li><a href="https://www.outreachy.org/blog/">Outreachy Blog</a></li>
+          <li><a href="https://opensource.guide/">Open Source Guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="ms-rl">
+      <h2>Microsoft Reinforcement Learning Fest</h2>
+      <p>
+        Microsoft's Reinforcement Learning Fest is an opportunity to learn about
+        and contribute to reinforcement learning projects.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/"
+              >Official RL Fest Website</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.microsoft.com/en-us/research/group/reinforcement-learning-group/"
+              >Microsoft RL Research Group</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.coursera.org/specializations/reinforcement-learning"
+              >Coursera RL Specialization</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/dennybritz/reinforcement-learning"
+              >RL GitHub Repository</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program" id="kde">
+      <h2>Season of KDE (SoK)</h2>
+      <p>
+        Season of KDE is an outreach program hosted by the KDE community to
+        promote open source software development.
+      </p>
+      <div class="resources">
+        <h3>Learning Resources:</h3>
+        <ul>
+          <li>
+            <a href="https://season.kde.org/">Official Season of KDE Website</a>
+          </li>
+          <li>
+            <a href="https://community.kde.org/Get_Involved"
+              >KDE Get Involved Guide</a
+            >
+          </li>
+          <li><a href="https://techbase.kde.org/">KDE TechBase</a></li>
+          <li>
+            <a href="https://develop.kde.org/docs/"
+              >KDE Developer Documentation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+
+    <script>
+      // Back to Top button functionality
+      const backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Add animation to program sections
+      const programs = document.querySelectorAll(".program");
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      programs.forEach((program) => {
+        program.style.opacity = "0";
+        program.style.transform = "translateY(20px)";
+        program.style.transition = "opacity 0.5s, transform 0.5s";
+        observer.observe(program);
+      });
+    </script>
+  </body>
+</html>
